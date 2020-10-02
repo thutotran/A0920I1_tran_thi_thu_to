@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .form1 {
+        width: 50%;
+        background-color:  #f3f16b;
+      }
+      .row {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        width: 80px;
+        text-align: left: ;;
+      }
+      .h2-text {
+        background-color:rgba(0,200,0,0.3);
+        color: blue;
+        margin-left: 10px;
+
+      }
+      .input-name{
+        width: 200px;
+      }
+      .title {
+        color: blue;
+        margin-right: 40px;
+        margin-left: 10px;
+      }
+      .button {
+        margin-right: 5px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form1">
+      <form action="/action_page.php">
+        <h2 class="h2-text">ĐĂNG KÝ HỌC VIÊN</h2>
+        <div class="row">
+          <p class="title">Họ và tên</p>
+          <input class="input-name" type="text" name="yourname" />
+          <br />
+        </div>
+        <div class="row">
+          <p class="title">Ngày sinh</p>
+          <input type="date" name="email" />
+          <br />
+        </div>
+        <div class="row">
+          <p class="title">Giới tính</p>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Nam</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Nữ</label>
+        </div>
+        <div class="row">
+          <p class="title">Địa chỉ</p>
+          <textarea cols="40" rows="5"></textarea>
+        </div>
+        <div class="row">
+          <p class="title">Lớp</p>
+          <select name="class">
+            <option value="select" selected>- Chọn lớp -</option>
+            <option value="A0920I1">A0920I1</option>
+            <option value="A0920F1">A0920F1</option>
+            <option value="A0920G1">A0920G1</option>
+          </select>
+        </div>
+        <div class="row">
+          <p class="title">Email</p>
+          <input type="email" name="email" />
+          <br />
+        </div>
+        <div class="row">
+          <p class="title">Điện thoại</p>
+          <input type="number" name="phone" />
+          <br />
+        </div>
+
+        <div class="row">
+          <p class="title"></p>
+          <input class="button" type="submit" value="Gửi thông tin" />
+          <input class="button" type="reset" value="Nhập lại" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

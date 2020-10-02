@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .form1 {
+        width: 60%;
+      }
+      .row {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        width: 80px;
+        text-align: right;
+      }
+      .h2-text {
+        background-color: rgba(255, 72, 0, 0.959);
+        color: aliceblue;
+        text-align: center;
+        padding: 3px 0;
+      }
+      .title {
+        color: blue;
+        margin-right: 10px;
+        margin-left: 50px;
+      }
+      .input-name {
+        width: 180px;
+      }
+      .hobby-item {
+        display: inline-block;
+        width: 180px;
+      }
+      .hobby-label {
+        color: rgba(255, 72, 0, 0.959);
+        margin-right: 10px;
+      }
+      .button {
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form1">
+      <form action="/action_page.php">
+        <h2 class="h2-text">SỞ THÍCH CỦA BẠN</h2>
+        <div class="row">
+          <p class="title">Họ và tên</p>
+          <input class="input-name" type="text" name="yourname" />
+          <br />
+        </div>
+        <div class="row">
+          <p class="title">Email</p>
+          <input type="email" name="email" />
+          <br />
+        </div>
+        <div class="row">
+          <div>
+            <p class="title">Sở thích</p>
+          </div>
+          <div class="hobby-lists">
+            <div class="hobby-item">
+              <input name="hobby" value="sport" type="checkbox" />
+              <label class="hobby-label">Thể thao</label>
+            </div>
+            <div class="hobby-item">
+              <input name="hobby" value="music" type="checkbox" />
+              <label class="hobby-label">Âm nhạc</label>
+            </div>
+            <div class="hobby-item">
+              <input name="hobby" value="book" type="checkbox" />
+              <label class="hobby-label">Đọc sách</label>
+            </div>
+            <div class="hobby-item">
+              <input name="hobby" value="web" type="checkbox" />
+              <label class="hobby-label">Lướt web</label>
+            </div>
+            <div class="hobby-item">
+              <input name="hobby" value="game" type="checkbox" />
+              <label class="hobby-label">Chơi game</label>
+            </div>
+            <div class="hobby-item">
+              <input name="hobby" value="cinema" type="checkbox" />
+              <label class="hobby-label">Điện ảnh</label>
+            </div>
+            <div class="hobby-item">
+              <input name="hobby" value="travel" type="checkbox" />
+              <label class="hobby-label">Du lịch</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="title"></p>
+          <input class="button" type="submit" value="Gửi thông tin" />
+          <input type="reset" value="Nhập lại" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
