@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, sans-serif;
+      }
+      .m0 {
+        margin: 0;
+      }
+      .m-top {
+        margin-top: 0;
+      }
+      .form1 {
+        margin: 0;
+        padding: 6px 1% 9px 1%;
+        line-height: 2;
+      }
+      .text1 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .text2 {
+        font-size: 12px;
+        color: rgb(77, 77, 77);
+      }
+      .head-text {
+        line-height: 1.5;
+      }
+      .select {
+        width: 50%;
+        height: 23px;
+        padding: 1px 0 0;
+        margin: 0 0 1px;
+        font-size: 16px;
+      }
+      .title {
+        padding: 0 0 3px;
+        font-size: 12px;
+        font-weight: 550;
+      }
+      .input-other {
+        margin-left: 30px;
+        height: 19px;
+      }
+      .input-dollars {
+        width: 80px;
+      }
+      .input-cents {
+        width: 10px;
+      }
+      .input-textarea {
+        width: 100%;
+        height: 136px;
+      }
+      .money {
+        margin: 0 60px 0 10px;
+        padding: 0;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+      }
+      tr:nth-child(odd) {
+        background-color: #f3f3f3;
+      }
+
+      td {
+        margin-left: 10px;
+      }
+      .title-colum {
+        padding-left: 20px;
+      }
+      .title-row {
+        text-align: center;
+        width: 15%;
+        padding: 10px;
+      }
+      .center {
+        text-align: center;
+      }
+      .button {
+        margin: 10px 0 10px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form1">
+      <form action="/action_page.php">
+        <div class="head-text">
+          <p class="text1">Market Research Survey</p>
+          <p class="text2 m-top">
+            Please take a few moments to complete this satisfaction survey.
+          </p>
+        </div>
+        <hr />
+        <div>
+          <label class="title">What is your age range?</label>
+          <br />
+          <select class="select" name="age">
+            <option value="18-24" selected>18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-50">35-50</option>
+            <option value="50+">50+</option>
+          </select>
+        </div>
+        <div>
+          <label class="title">What is your yearly income range?</label>
+          <br />
+          <select class="select" name="income">
+            <option value="$0 - $25,00" selected>$0 - $25,00</option>
+            <option value="$25,001 - $50,00">$25,001 - $50,00</option>
+            <option value="$50,001 - $100,00">$50,001 - $100,00</option>
+            <option value="100,00+">100,00+</option>
+          </select>
+        </div>
+        <div>
+          <label class="title">Gender Identity</label>
+          <br />
+          <input type="radio" id="male" name="gender" value="male" />
+          <label class="text2" for="male">Male</label>
+          <br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label class="text2" for="female">Female</label>
+          <br />
+          <input type="radio" id="Nonbinary" name="gender" value="nonbinary" />
+          <label class="text2" for="female">Nonbinary</label>
+          <br />
+          <input type="radio" id="other" name="gender" value="other" />
+          <label class="text2" for="other">Other</label>
+          <br />
+          <input class="input-other" type="text" name="other" />
+        </div>
+        <div>
+          <label class="title"
+            >Which of the following products have your purchased in the last 2
+            months. Please check all that apply.
+          </label>
+          <br />
+          <input name="product" value="product 1" type="checkbox" />
+          <label class="text2">Product 1</label>
+          <br />
+          <input name="product" value="product 2" type="checkbox" />
+          <label class="text2">Product 2</label>
+          <br />
+          <input name="product" value="product 3" type="checkbox" />
+          <label class="text2">Product 3</label>
+        </div>
+        <div>
+          <label class="title">How often would you use our new product?</label>
+          <br />
+          <input type="radio" id="daily" name="times" value="daily" />
+          <label class="text2" for="daily">Dail</label>
+          <br />
+          <input type="radio" id="weekly" name="times" value="weekly" />
+          <label class="text2" for="weekly">Weekly</label>
+          <br />
+          <input type="radio" id="monthly" name="times" value="monthly" />
+          <label class="text2" for="monthly">Monthly</label>
+        </div>
+        <div>
+          <label class="title">What would you pay for the new product? </label>
+          <br />
+          <label class="text2">$</label>
+          <input class="input-dollars" type="text" name="$" />
+          <label class="text2">.</label>
+          <input class="input-cents" type="text" name="cents" />
+        </div>
+        <div>
+          <label class="text2 money">Dollas</label>
+          <label class="text2">Cent</label>
+        </div>
+        <div>
+          <label class="text2"
+            >What features would you like to see in the new product. </label
+          ><br />
+          <textarea class="input-textarea"></textarea>
+        </div>
+        <p class="text2 m0">
+          Please rate your level of agreement wwith the following statements.
+        </p>
+      </form>
+    </div>
+    <table>
+      <tr class="title">
+        <th></th>
+        <th class="title-row">Strongly Disagree</th>
+        <th class="title-row">Disagree</th>
+        <th class="title-row">Agree</th>
+        <th class="title-row">Strongly Agree</th>
+      </tr>
+      <tr>
+        <td class="title title-colum">Our products are priced fairly.</td>
+        <td class="center">
+          <input name="select-row1" value="1" type="radio" />
+          <br />
+          <label class="text2">1</label>
+        </td>
+        <td class="center">
+          <input name="select-row1" value="2" type="radio" />
+          <br />
+          <label class="text2">2</label>
+        </td>
+        <td class="center">
+          <input name="select-row1" value="3" type="radio" />
+          <br />
+          <label class="text2">3</label>
+        </td>
+        <td class="center">
+          <input name="select-row1" value="4" type="radio" />
+          <br />
+          <label class="text2">4</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="title title-colum">Our products are hight quality.</td>
+        <td class="center">
+          <input name="select-row2" value="1" type="radio" />
+          <br />
+          <label class="text2">1</label>
+        </td>
+        <td class="center">
+          <input name="select-row2" value="2" type="radio" />
+          <br />
+          <label class="text2">2</label>
+        </td>
+        <td class="center">
+          <input name="select-row2" value="3" type="radio" />
+          <br />
+          <label class="text2">3</label>
+        </td>
+        <td class="center">
+          <input name="select-row2" value="4" type="radio" />
+          <br />
+          <label class="text2">4</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="title title-colum">
+          You would recommend our product to a friend or coworker.
+        </td>
+        <td class="center">
+          <input name="select-row3" value="1" type="radio" />
+          <br />
+          <label class="text2">1</label>
+        </td>
+        <td class="center">
+          <input name="select-row3" value="2" type="radio" />
+          <br />
+          <label class="text2">2</label>
+        </td>
+        <td class="center">
+          <input name="select-row3" value="3" type="radio" />
+          <br />
+          <label class="text2">3</label>
+        </td>
+        <td class="center">
+          <input name="select-row3" value="4" type="radio" />
+          <br />
+          <label class="text2">4</label>
+        </td>
+      </tr>
+    </table>
+    <div class="button">
+      <input type="submit" value="Submit" />
+    </div>
+  </body>
+</html>
