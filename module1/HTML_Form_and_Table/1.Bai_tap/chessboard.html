@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bàn cờ vua</title>
+    <style>
+      table {
+        background-color: #ffb300;
+        border-collapse: collapse;
+        border: 1rem solid #ffb300;
+      }
+      .number {
+        width: 5rem;
+      }
+      .space {
+        width: 2rem;
+      }
+      .text {
+        height: 5rem;
+      }
+      .even .board:nth-child(odd) {
+        background-color: white;
+      }
+      .even .board:nth-child(even) {
+        background-color: black;
+      }
+      .odd .board:nth-child(even) {
+        background-color: white;
+      }
+      .odd .board:nth-child(odd) {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th class="space"></th>
+        <th class="number">1</th>
+        <th class="number">2</th>
+        <th class="number">3</th>
+        <th class="number">4</th>
+        <th class="number">5</th>
+        <th class="number">6</th>
+        <th class="number">7</th>
+        <th class="number">8</th>
+      </tr>
+      <tr class="odd">
+        <td class="text">A</td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+      </tr>
+      <tr class="even">
+        <td class="text">B</td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+      </tr>
+      <tr class="odd">
+        <td class="text">C</td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+      </tr>
+      <tr class="even">
+        <td class="text">D</td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+      </tr>
+      <tr class="odd">
+        <td class="text">E</td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+      </tr>
+      <tr class="even">
+        <td class="text">F</td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+      </tr>
+      <tr class="odd">
+        <td class="text">G</td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+      </tr>
+      <tr class="even">
+        <td class="text">H</td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+        <td class="board"></td>
+      </tr>
+    </table>
+  </body>
+</html>
