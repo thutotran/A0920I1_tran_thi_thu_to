@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h3>Tính chu vi - diện tích hình tròn</h3>
+    <p>
+      Nhập bán kính hình tròn:
+      <input type="number" id="radius" onkeyup="tinh()" />
+    </p>
+
+    <p>Chu vi hình tròn là: <span id="circumference"></span></p>
+    <p>Diện tích hình tròn là: <span id="acreage"></span></p>
+
+    <script>
+      function tinh() {
+        let r = document.getElementById('radius').value;
+        let circumferenceOfCircle = 2 * 3.14 * r;
+        document.getElementById(
+          'circumference'
+        ).innerHTML = circumferenceOfCircle;
+
+        let acreageOfCircle = 3.14 * r * r;
+        document.getElementById('acreage').innerHTML = acreageOfCircle;
+      }
+    </script>
+  </body>
+</html>

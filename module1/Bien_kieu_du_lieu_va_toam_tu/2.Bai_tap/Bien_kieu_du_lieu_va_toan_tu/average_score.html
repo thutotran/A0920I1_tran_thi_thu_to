@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>average</title>
+    <style></style>
+  </head>
+  <body>
+    <h2>Điểm học kì I</h2>
+    <label class="text">Điểm Vật Lý</label>
+    <input type="text" id="vat_ly" onchange="tinhDiem()" />
+
+    <br />
+
+    <label class="text">Điểm Hoá Học</label>
+    <input type="text" id="sinh_hoc" onchange="tinhDiem()" />
+
+    <br />
+
+    <label class="text">Điểm Sinh học</label>
+    <input type="text" id="hoa_hoc" onchange="tinhDiem()" />
+
+    <p id="diemtrungbinh"></p>
+    <p id="diemtong"></p>
+
+    <script>
+      let vatLy, sinhHoc, hoaHoc;
+      let diemTrungBinh = document.getElementById('diemtrungbinh');
+
+      function tinhDiem() {
+        laydiemtrungbinh();
+        tinhdiemtong();
+      }
+
+      function laydiemtrungbinh() {
+        vatLy = parseInt(document.getElementById('vat_ly').value);
+        sinhHoc = parseInt(document.getElementById('sinh_hoc').value);
+        hoaHoc = parseInt(document.getElementById('hoa_hoc').value);
+
+        if (vatLy && sinhHoc && hoaHoc) {
+          diemTrungBinh.innerHTML =
+            'Điểm trung bình là: ' + (vatLy + sinhHoc + hoaHoc) / 3;
+        }
+      }
+      let diemTong = document.getElementById('diemtong');
+      function tinhdiemtong() {
+        vatLy = parseInt(document.getElementById('vat_ly').value);
+        sinhHoc = parseInt(document.getElementById('sinh_hoc').value);
+        hoaHoc = parseInt(document.getElementById('hoa_hoc').value);
+
+        if (vatLy && sinhHoc && hoaHoc) {
+          diemTong.innerHTML = 'Tổng điểm là: ' + (vatLy + sinhHoc + hoaHoc);
+        }
+      }
+
+      console.log('vatLy', vatLy);
+      console.log('sinhHoc', sinhHoc);
+      console.log('hoaHoc', hoaHoc);
+    </script>
+  </body>
+</html>
